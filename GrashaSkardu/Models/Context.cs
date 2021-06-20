@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace GrashaSkardu.Models
 {
-    public class Context:DbContext
+    public class Context : DbContext
     {
-        public Context(DbContextOptions<Context>dbContextOptions):base(dbContextOptions){
+        public Context(DbContextOptions<Context> dbContextOptions) : base(dbContextOptions)
+        {
+
+        }
+        public DbSet<Student> Students { get; set; }
 
     }
 }
